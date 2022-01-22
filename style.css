@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* ---- CONFIG GERAL ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+/* ---- MAIN ---- */
+
+body {
+    background-color: #F2F2F2;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.conteiner {
+    padding: 2rem;
+    width: 280px;
+    height: 400px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 3rem 0;
+    color: white;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    margin-bottom: 3rem;
+    color: #F8E1C9;
+}
+
+.card-laranja {
+    background-color: #E38826;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-ciano {
+    background-color: #006970;
+}
+
+.card-azul {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+}
+
+a {
+    text-align: center;
+    padding: .60rem 2rem;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all 0.3s;
+}
+
+.card-laranja a {
+    color: #E38826;
+}
+
+.card-ciano a {
+    color: #006970;
+}
+
+.card-azul a {
+    color: #004241;
+}
+
+a:hover {
+    color: white;
+}
+
+.card-laranja a:hover {
+    background-color: #E38826;
+}
+
+.card-ciano a:hover {
+    background-color: #006970;
+}
+
+.card-azul a:hover {
+    background-color: #004241;
+}
+
+@media (max-width: 430px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a {
+        margin-top: 3rem;
+    }
+
+    .card-laranja {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-azul {
+        border-radius: 0 0 10px 10px;
+    }
+}
